@@ -23,7 +23,7 @@
         <dependency>
             <groupId>com.github.KacpersDev</groupId>
             <artifactId>Venom</artifactId>
-            <version>16793ac6f7</version>
+            <version>f825814824</version>
         </dependency>
 ```
 
