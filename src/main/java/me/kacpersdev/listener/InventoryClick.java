@@ -15,7 +15,7 @@ public class InventoryClick implements Listener {
     public void onClick(InventoryClickEvent event){
 
         if (event.getInventory().getTitle().equalsIgnoreCase(venom.getCC().translate(venomInventory.getInventoryName()))){
-            if (venomInventory.isCanTakeItems()) {
+            if (!venomInventory.isCanTakeItems()) {
                 event.setCancelled(true);
             }
         }
