@@ -1,0 +1,4 @@
+name: Malibu
+version: '${project.version}'
+main: me.kacpersdev.Malibu
+api-version: 1.18
