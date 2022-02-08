@@ -6,6 +6,27 @@
 > Messages
 > Server Information 
 
+# Maven
+
+## Repository
+
+``yaml
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+```
+
+## Dependency
+
+```yaml
+        <dependency>
+            <groupId>com.github.KacpersDev</groupId>
+            <artifactId>Venom</artifactId>
+            <version>16793ac6f7</version>
+        </dependency>
+```
+
 # Usage
 
 ## Sending a Message
