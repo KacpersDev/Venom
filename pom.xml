@@ -73,5 +73,10 @@
             <artifactId>paperspigot-api</artifactId>
             <version>1.8.8-R0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.KacpersDev</groupId>
+            <artifactId>Venom</artifactId>
+            <version>16c78cbc5d</version>
+        </dependency>
     </dependencies>
 </project>

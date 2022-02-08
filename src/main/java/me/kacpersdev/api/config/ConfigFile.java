@@ -9,11 +9,13 @@ import java.io.IOException;
 
 public class ConfigFile {
 
+    private final Venom venom = new Venom();
+
     public void createConfig(File file, FileConfiguration configuration, String dir){
 
         if (!(file.exists())) {
             file.getParentFile().mkdir();
-            Venom.getINSTANCE().saveResource(dir, false);
+            venom.saveResource(dir, false);
         }
 
         try {

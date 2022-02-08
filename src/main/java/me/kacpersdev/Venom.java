@@ -11,7 +11,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Venom extends JavaPlugin {
 
-    private static Venom INSTANCE;
     private ConfigFile configFile;
     private VenomInventory venomInventory;
     private API api;
@@ -19,14 +18,7 @@ public final class Venom extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        INSTANCE = this;
         this.pluginListeners();
-
-
-    }
-
-    public static Venom getINSTANCE() {
-        return INSTANCE;
     }
 
     @Override

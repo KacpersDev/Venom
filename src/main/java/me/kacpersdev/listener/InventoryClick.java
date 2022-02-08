@@ -9,11 +9,12 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 public class InventoryClick implements Listener {
 
     private final VenomInventory venomInventory = new VenomInventory();
+    private final Venom venom = new Venom();
 
     @EventHandler
     public void onClick(InventoryClickEvent event){
 
-        if (event.getInventory().getTitle().equalsIgnoreCase(Venom.getINSTANCE().getCC().translate(venomInventory.getInventoryName()))){
+        if (event.getInventory().getTitle().equalsIgnoreCase(venom.getCC().translate(venomInventory.getInventoryName()))){
             if (venomInventory.isCanTakeItems()) {
                 event.setCancelled(true);
             }
