@@ -10,6 +10,6 @@ public class VenomInventory {
 
         inventory = Bukkit.createInventory(player, size, title);
 
-        pl
+        player.openInventory(inventory);
     }
 }
