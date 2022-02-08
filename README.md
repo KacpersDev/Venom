@@ -20,9 +20,10 @@ public class Test implements Listener {
 
         Player player = event.getPlayer();
 
-        player.sendMessage(venom.getCC().translate("&aInventory got opened"));
-        
+        player.sendMessage(venom.getCC().translate("&aThis is a test message"));
+
     }
 
 }
+
 ```
