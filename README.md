@@ -20,11 +20,11 @@
 ## Dependency
 
 ```yaml
-        <dependency>
-            <groupId>com.github.KacpersDev</groupId>
-            <artifactId>Venom</artifactId>
-            <version>f825814824</version>
-        </dependency>
+	<dependency>
+	    <groupId>com.github.KacpersDev</groupId>
+	    <artifactId>Venom</artifactId>
+	    <version>ba6498e800</version>
+	</dependency>
 ```
 
 # Gradle
