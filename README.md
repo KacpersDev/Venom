@@ -47,3 +47,25 @@ public class Test implements Listener {
 
 }
 ```
+
+## Server Informations
+
+```java
+public class Test implements Listener {
+
+    private final Venom venom = new Venom();
+
+    @EventHandler
+    public void onMove(PlayerMoveEvent event){
+
+        Player player = event.getPlayer();
+        
+        player.sendMessage(venom.getApi().getServerName());
+        player.sendMessage(String.valueOf(venom.getApi().getOnlinePlayers()));
+        player.sendMessage(String.valueOf(venom.getApi().getMaxPlayers()));
+        player.sendMessage(String.valueOf(venom.getApi().isServerWhitelisted()));
+
+    }
+
+}
+```
