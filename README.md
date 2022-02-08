@@ -113,3 +113,69 @@ public class Test implements Listener {
 
 }
 ```
+
+## Creating Item
+
+```java
+public class Test implements Listener {
+
+    private final Venom venom = new Venom();
+
+    @EventHandler
+    public void onMove(PlayerMoveEvent event){
+
+        Player player = event.getPlayer();
+
+        ArrayList<String> lore = new ArrayList<>();
+
+        venom.getItem().createItem(
+                new ItemStack(Material.DIAMOND_SWORD),
+                true,
+                venom.getCC().translate("Diamond Sword"),
+                true,
+                lore,
+                "HeyHEy",
+                true,
+                "DURABILITY",
+                3
+        );
+        
+    }
+
+}
+```
+
+## Adding Item To Player & Online Players
+
+```java
+public class Test implements Listener {
+
+    private final Venom venom = new Venom();
+
+    @EventHandler
+    public void onMove(PlayerMoveEvent event){
+
+        Player player = event.getPlayer();
+
+        ArrayList<String> lore = new ArrayList<>();
+
+        venom.getItem().createItem(
+                new ItemStack(Material.DIAMOND_SWORD),
+                true,
+                venom.getCC().translate("Diamond Sword"),
+                true,
+                lore,
+                "HeyHEy",
+                true,
+                "DURABILITY",
+                3
+        );
+
+        venom.getItem().giveItem(player, 3);
+        venom.getItem().giveAllItem(3);
+        venom.getItem().setItem(player, 1, 1);
+        venom.getItem().setAllItem(1,1);
+    }
+
+}
+```
