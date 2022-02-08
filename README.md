@@ -32,21 +32,21 @@
 ## Repository
 
 ```yaml
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
 ```
 
 ## Dependency
 
 ```yaml
 
-	dependencies {
-	        implementation 'com.github.KacpersDev:Venom:16793ac6f7'
-	}
+dependencies {
+	       implementation 'com.github.KacpersDev:Venom:16793ac6f7'
+}
 
 ```
 
