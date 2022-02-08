@@ -7,10 +7,10 @@ import me.kacpersdev.chatcolor.CC;
 
 public final class Venom {
 
-    private ConfigFile configFile;
-    private VenomInventory venomInventory;
-    private API api;
-    private CC cc;
+    private final ConfigFile configFile = new ConfigFile();
+    private final VenomInventory venomInventory = new VenomInventory();
+    private final API api = new API();
+    private final CC cc = new CC();
 
     public ConfigFile getConfigFile(){
         return this.configFile;
