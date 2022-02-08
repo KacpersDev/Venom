@@ -27,3 +27,23 @@ public class Test implements Listener {
 }
 
 ```
+
+## Creating an Inventory
+
+```java
+public class Test implements Listener {
+
+    private final Venom venom = new Venom();
+    private Inventory inventory;
+
+    @EventHandler
+    public void onMove(PlayerMoveEvent event){
+
+        Player player = event.getPlayer();
+
+        venom.getVenomInventory().createInventory(player, inventory, "inventory name", 54, true);
+
+    }
+
+}
+```
